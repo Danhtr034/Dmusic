@@ -1,0 +1,63 @@
+﻿@model Dmusic.Controllers.Album
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Album</h4>
+<hr />
+<div class="form-container">
+    <div class="form-column">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="error-summary"></div>
+
+            <div class="form-group">
+                <label asp-for="Title" class="form-label"></label>
+                <input asp-for="Title" class="form-input" />
+                <span asp-validation-for="Title" class="error-text"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ReleaseDate" class="form-label"></label>
+                <input asp-for="ReleaseDate" class="form-input" />
+                <span asp-validation-for="ReleaseDate" class="error-text"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Artist" class="form-label"></label>
+                <input asp-for="Artist" class="form-input" />
+                <span asp-validation-for="Artist" class="error-text"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Genre" class="form-label"></label>
+                <input asp-for="Genre" class="form-input" />
+                <span asp-validation-for="Genre" class="error-text"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Price" class="form-label"></label>
+                <input asp-for="Price" class="form-input" />
+                <span asp-validation-for="Price" class="error-text"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TrackCount" class="form-label"></label>
+                <input asp-for="TrackCount" class="form-input" />
+                <span asp-validation-for="TrackCount" class="error-text"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="submit-button" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="back-link">
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
